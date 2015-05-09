@@ -16,6 +16,7 @@ angular.module('onroadApp')
     ];
 
     $scope.score = {};
-    $scope.score.chartConfig = chartConfig;
+    $scope.score.scoreChartConfig = scoreChartConfig;
+    $scope.score.scoreHistoryChartConfig = scoreHistoryChartConfig;
 
   });

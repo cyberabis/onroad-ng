@@ -14,7 +14,9 @@
 <div class="row">
   <div class="col-xs-12">
     <center>
-      <highchart id="chart1" config="score.chartConfig"></highchart>
+      <div class="or-score-chart">
+        <highchart id="score-chart" config="score.scoreChartConfig"></highchart>
+      </div>
     </center>
   </div>
 </div>
@@ -46,47 +48,47 @@
 <hr/>
 <br/>
 
-<!-- BADGES SECTION -->
+<!-- SCORE OVER TIME -->
 <div class="row">
   <div class="col-xs-12">
     <center>
-      <h1>Your Badges</h1>
+      <h4 class="or-heading">You are getting even better!</h4>
     </center>
   </div>
 </div>
 <br/>
-<br/>
+<!--
+<p class="text-muted">“You think driving is better than walking, because hitting is better than being hit?” </p>
+-->
 <div class="row">
-  <div class="col-xs-6">
+  <div class="col-xs-12">
     <center>
-      <img class="or-badge" src="images/experience_badge1.png"></img>
-      <br/>
-      <h5>Junior Roadie</h5>
+      <div class="or-score-chart">
+        <highchart id="score-history-chart" config="score.scoreHistoryChartConfig"></highchart>
+      </div>
     </center>
   </div>
-  <div class="col-xs-6">
+</div>
+
+<br/>
+<hr/>
+<br/>
+
+<div class="row">
+  <div class="col-xs-12">
     <center>
-      <img class="or-badge" src="images/fuel_badge2.png"></img>
-      <br/>
-      <h5>Frugal Filler</h5>
+      <h4 class="or-heading">Driving tips for you</h4>
     </center>
   </div>
 </div>
 <br/>
 <div class="row">
-  <div class="col-xs-6">
-    <center>
-      <img class="or-badge" src="images/safe_badge1.png"></img>
-      <br/>
-      <h5>Safe Hands</h5>
-    </center>
-  </div>
-  <div class="col-xs-6">
-    <center>
-      <img class="or-badge-next" src="images/experience_badge2.png"></img>
-      <br/>
-      <h5 class="text-muted">Next: Smooth Sailor</h5>
-    </center>
+  <div class="col-xs-12">
+      <h5><span class="glyphicon glyphicon-road"></span> Road safety tip</h5>
+      Reduce speed while approaching cross roads.
+      <br/><br/>
+      <h5><span class="glyphicon glyphicon-cog"></span> Maintenance tip</h5>
+      Brake while approaching a speed bump and accelerate only after all wheels cross, this prevents suspension damage and greatly reduces maintenance costs.
   </div>
 </div>
 

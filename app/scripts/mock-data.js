@@ -1,4 +1,4 @@
-var chartConfig = {
+var scoreChartConfig = {
         options: {
             chart: {
                 type: 'solidgauge',
@@ -32,7 +32,7 @@ var chartConfig = {
             dataLabels: {
               borderColor: 'white',
               y: 0,
-              format: '<div style="text-align:center"><span style="font-size:50px;color:black">{y}</span>'
+              format: '<div style="text-align:center"><span style="font-size:45px;color:black">{y}</span>'
             }
         }],
         yAxis: {
@@ -45,5 +45,42 @@ var chartConfig = {
             ],
             tickWidth: 0
         },
-        loading: false
+        loading: false,
+        size: {
+          height: 300
+        }
     };
+
+var scoreHistoryChartConfig = {
+          options: {
+              chart: {
+                  type: 'line'
+              }
+          },
+          title: {
+              text: ''
+          },
+          series: [
+                {
+                    name: 'Score',
+                    data: [ [1420070400000, 44], [1422748800000, 42], [1425168000000, 55], [1427846400000, 60], [1430438400000, 63] ],
+                    color: 'SteelBlue'
+                }
+          ],
+          xAxis: {
+              type: 'datetime',
+              title: {
+                  text: ''
+              }
+          },
+          yAxis: {
+              title: {
+                  text: ''
+              },
+              min: 0
+          },
+          size: {
+             height: 250
+          }, 
+          loading: false
+      }
