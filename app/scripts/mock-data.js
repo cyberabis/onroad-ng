@@ -1,13 +1,14 @@
 var chartConfig = {
         options: {
             chart: {
-                type: 'solidgauge'
+                type: 'solidgauge',
+                spacing: [0,0,0,0]
             },
             pane: {
                 center: ['50%', '50%'],
-                size: '100%',
-                startAngle: -90,
-                endAngle: +90,
+                size: '85%',
+                startAngle: 0,
+                endAngle: 360,
                 background: {
                     backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
                     innerRadius: '60%',
@@ -27,10 +28,10 @@ var chartConfig = {
             title: null
         },
         series: [{
-            data: [75],
+            data: [63],
             dataLabels: {
               borderColor: 'white',
-              y: -10,
+              y: 0,
               format: '<div style="text-align:center"><span style="font-size:50px;color:black">{y}</span>'
             }
         }],
@@ -38,9 +39,9 @@ var chartConfig = {
             min: 0,
             max: 100,
             stops: [
-                [0.1, '#F08080'], // lightcoral
-                [0.5, '#FFA07A'], // lightsalmon
-                [0.8, '#90EE90'] // green
+                [0.5, '#F08080'], // lightcoral
+                [0.75, '#FFA07A'], // lightsalmon
+                [1, '#90EE90'] // green
             ],
             tickWidth: 0
         },
