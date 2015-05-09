@@ -81,7 +81,21 @@ body {
 /* My custom */
 
 .or-profile-img {
-  height: 36px;
-  width: 36px;
+  height: 32px;
   border-radius: 25px;
+}
+
+.or-badge {
+  height: 120px;
+  width: 120px;
+}
+
+.or-badge-next {
+  height: 120px;
+  width: 120px;
+  opacity: 0.5;
+}
+
+.label {
+  font-size: 15px;
 }
