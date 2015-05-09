@@ -28,6 +28,10 @@ angular
         templateUrl: 'views/badges.html',
         controller: 'BadgesCtrl'
       })
+      .when('/challenges', {
+        templateUrl: 'views/challenges.html',
+        controller: 'ChallengesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

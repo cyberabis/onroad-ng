@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name onroadApp.controller:BadgesCtrl
+ * @name onroadApp.controller:ChallengesCtrl
  * @description
- * # BadgesCtrl
+ * # ChallengesCtrl
  * Controller of the onroadApp
  */
 angular.module('onroadApp')
-  .controller('BadgesCtrl', function ($scope) {
+  .controller('ChallengesCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
