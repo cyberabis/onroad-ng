@@ -32,6 +32,10 @@ angular
         templateUrl: 'views/challenges.html',
         controller: 'ChallengesCtrl'
       })
+      .when('/settings', {
+        templateUrl: 'views/settings.html',
+        controller: 'SettingsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
