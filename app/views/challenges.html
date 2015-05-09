@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-xs-12">
+    <center>
+      <h1>Your Challenges</h1>
+    </center>
+  </div>
+</div>
+<br/>
+
+<div class="row">
+  <div class="col-xs-12">
+    <center>
+      <h4 class="or-heading">Ranking among friends</h4>
+    </center>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-xs-12">
+	<table class="table table-striped">
+	<tr>
+	   <th>Rank</th>
+	   <th>User</th>
+	   <th>Score</th>
+	 </tr>
+	 <tr ng-repeat="user in friends">
+	 	<td>{{$index + 1}}</td>
+	   <td>{{user.name}}</td>
+	   <td>{{user.score}}</td>
+	 </tr>
+	</table>
+  </div>
+</div>
+<br/>
+
+<div class="row">
+  <div class="col-xs-12">
+    <center>
+      <h4 class="or-heading">Route Challenges</h4>
+    </center>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-xs-12">
+	<table class="table table-striped">
+	 <tr ng-repeat="challenge in routeChallenges">
+	   <td>{{challenge.name}}</td>
+	   <td>{{challenge.rank}}</td>
+	   <td><a href="#"><img class = "or-add-friend" src="images/add_friend.png"></img></a></td>
+	 </tr>
+	</table>
+  </div>
+</div>
+<br/>
+
+<div class="row">
+  <div class="col-xs-12">
+	<button type="button" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Invite more friends</button>
+  </div>
+</div>
+
+<br/>
+<br/>
