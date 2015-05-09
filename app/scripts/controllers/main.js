@@ -14,4 +14,8 @@ angular.module('onroadApp')
       'AngularJS',
       'Karma'
     ];
+
+    $scope.score = {};
+    $scope.score.chartConfig = chartConfig;
+
   });
